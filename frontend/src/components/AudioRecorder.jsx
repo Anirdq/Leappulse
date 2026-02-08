@@ -48,25 +48,27 @@ const AudioRecorder = () => {
         if (!audioBlob) return;
 
         setLoading(true);
-        const formData = new FormData();
-        // Rename file to satisfy backend expectation if needed (e.g., "file")
-        formData.append("file", audioBlob, "recording.webm");
 
+        // Mock evaluation for client-side demo (Backend replacement)
         try {
-            const response = await fetch("http://localhost:8000/evaluate", {
-                method: "POST",
-                body: formData,
-            });
+            // Simulate network delay (1.5s)
+            await new Promise(resolve => setTimeout(resolve, 1500));
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
+            // Mock response data (same as backend)
+            const mockResult = {
+                band_score: (5.5 + Math.random() * 3.5).toFixed(1), // Random score between 5.5 and 9.0
+                feedback: "Good fluency, but try to use more varied vocabulary. (Client-side Mock)",
+                fluency: 7.5,
+                vocabulary: 6.5,
+                grammar: 7.0,
+                pronunciation: 8.0,
+                processing_time_ms: 1500
+            };
 
-            const result = await response.json();
-            setEvaluation(result);
+            setEvaluation(mockResult);
         } catch (error) {
             console.error("Error submitting audio:", error);
-            alert("Failed to get evaluation. Is the backend running?");
+            alert("Failed to evaluate.");
         } finally {
             setLoading(false);
         }
