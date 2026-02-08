@@ -2,10 +2,15 @@
 
 **Leap Pulse** is a gamified engagement feature for the LeapScholar IELTS product, designed to boost user retention through daily speaking practice and social competition.
 
-![Leap Pulse Demo](https://via.placeholder.com/800x400?text=Leap+Pulse+Dashboard) 
-*(Replace with actual screenshot after uploading)*
+![Leap Pulse Demo]
 
-## ✨ Features
+## ✨ Features<img width="495" height="792" alt="Screenshot 2026-02-08 132137" src="https://github.com/user-attachments/assets/a011be7a-22ae-4866-92a2-08a53c6daaec" />
+<img width="497" height="796" alt="Screenshot 2026-02-08 132144" src="https://github.com/user-attachments/assets/87707f8c-2e39-4da2-9d64-bae7fe2fac0b" />
+<img width="491" height="793" alt="Screenshot 2026-02-08 132207" src="https://github.com/user-attachments/assets/4bf2a58c-c078-42ce-b43a-eaea439e7459" />
+<img width="488" height="798" alt="Screenshot 2026-02-08 132129" src="https://github.com/user-attachments/assets/391a1414-f32b-4ae8-a93c-53a26d119af5" />
+
+
+
 
 ### 1. Daily Sprint (Phase 1)
 - **Mobile-First Dashboard**: A clean, responsive UI optimized for mobile devices.
